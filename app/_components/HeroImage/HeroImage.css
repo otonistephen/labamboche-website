@@ -1,0 +1,16 @@
+.hero-image-wrapper {
+ display: none;
+}
+
+
+@media (min-width: 768px) {
+  .hero-image-wrapper {
+    display: block;
+    height: 35rem;
+  }
+  .hero-image-wrapper img {
+    width: 100%;
+    /* height: auto; */
+    height: 100%;
+  }
+}

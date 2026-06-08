@@ -1,0 +1,22 @@
+.cart-profile-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.cart-link{
+  position: relative;
+}
+.cart-link .cart-count{
+  position: absolute;
+  z-index: 10;
+  
+  bottom: 9;
+  font-size: 1.3rem;
+  padding: .2rem .6rem;
+ 
+  border-radius: 50%;
+  left: 3;
+  background-color: var(--color-secondary-fixed-dim);
+  color: #fff;
+}

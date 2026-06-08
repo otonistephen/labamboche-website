@@ -1,0 +1,29 @@
+.products-hero{
+  text-align: center;
+  padding: 4.7rem 0 4.8rem 0;
+}
+.products-hero-header h1{
+  font-family: var(--font-noto-bold);
+  color: #79555C;
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+.products-hero-header p{
+  font-family: var(--font-vietnam-regular);
+  font-size: 1.6rem;
+  color: #5E5F5D;
+  line-height: 1.6;
+  max-width: 67rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+
+@media(min-width:768px){
+  .products-hero-header h1{
+  font-family: var(--font-noto-bold);
+  color: #79555C;
+  font-size: 4rem;
+}
+
+}

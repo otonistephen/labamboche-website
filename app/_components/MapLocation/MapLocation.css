@@ -1,0 +1,101 @@
+/* LocationMap.css */
+
+@import 'leaflet/dist/leaflet.css';
+@import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+
+.location-map-section {
+  /* padding: 2rem 2rem; */
+  padding: 5rem 0;
+  /* text-align: center; */
+ 
+}
+
+.location-map-title {
+  font-size: 3rem;
+  font-family: var(--font-noto-regular);
+  color: #1a1c1c;
+}
+
+.location-map-container {
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 30rem;
+  margin: 0 auto 4rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.location-map-address {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #4d4447;
+  font-family: var(--font-vietnam-regular);
+}
+
+.location-map-directions-btn {
+  display: inline-block;
+  font-family: var(--font-vietnam-regular);
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  border: none;
+  font-weight: 400;
+  background-color: #1a1c1c;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.location-map-directions-btn:hover {
+  background-color: #4d4447;
+}
+/* Add to your existing LocationMap.css */
+
+.location-map-subtitle {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 5rem 0 2rem 0;
+  color: #1a1c1c;
+  font-family: var(--font-noto-regular);
+}
+
+.location-map-wrapper {
+  margin-bottom: 6rem;
+}
+
+.location-map-wrapper:last-child {
+  margin-bottom: 0;
+}
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 400 !important;
+}
+
+/* @media (max-width: 768px) {
+  .location-map-subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-map-title {
+    font-size: 28px;
+  }
+
+  .location-map-container {
+    height: 400px;
+  }
+
+  .location-map-section {
+    padding: 40px 15px;
+  }
+} */
+
+@media (min-width: 768px) {
+  .container-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}

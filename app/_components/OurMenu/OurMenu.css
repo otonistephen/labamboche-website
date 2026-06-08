@@ -1,0 +1,220 @@
+
+
+.menu {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.menu-title {
+  font-size: 3rem;
+  font-family: var(--font-noto-regular);
+  color: #313133;
+}
+
+.menu .container {
+  padding: 0 1.5rem;
+}
+
+.menu-content .list-menu {
+  margin: 2.4rem 0 3.2rem;
+  padding: 0;
+ 
+}
+
+.menu-content .list-menu li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-transform: capitalize;
+  font-family: var(--font-vietnam-regular);
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  color: #7f7478;
+  color: var(  --color-on-surface-variant);
+  /* color: #785a1a; */
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0.4rem 0;
+}
+
+.menu-content .list-menu li:hover {
+  color: #1a1c1c;
+}
+
+/* ====================== PRODUCT CAROUSEL ====================== */
+
+.products {
+  margin-top: 3.5rem;
+  min-width: 20rem;
+}
+
+.product-name {
+  padding: 1.2rem 0 0.8rem;
+  font-size: 1.6rem;
+  font-family: var(--font-noto-regular);
+  color: #1a1c1c;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* Product Card */
+.product-card {
+  width: auto;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.product-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 32 / 42.6; /* Same proportion as desktop (≈ 3:4) */
+  overflow: hidden;
+  background-color: #f9f7f5; /* Soft warm background for bakery feel */
+  border-radius: 4px; /* No border radius as requested */
+  transition: .5s ease;
+  cursor: pointer;
+}
+.product-card-image img {
+  transition: transform 0.4s ease-in-out;
+}
+
+/* 3. The Hover State: scales the image up */
+.product-card:hover .product-card-image img {
+  transform: scale(1.1); /* Increases size by 10% */
+  cursor: pointer;
+  
+}
+
+/* 4. Optional: Subtle shadow for extra "pop" */
+.product-card {
+  transition: box-shadow 0.3s ease;
+}
+
+
+.product-card-image:hover {
+  box-shadow: 0 4px 18px #1a1c1c;
+}
+
+.product-card-image img {
+  border-radius: 0;
+}
+
+/* Swiper */
+.product-carousel .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* ====================== BUTTON ====================== */
+
+.menu-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 4rem;
+  min-height: 4.8rem;
+  font-size: 1.6rem;
+  /* border: 1.5px solid #7f7478; */
+  font-family: var(--font-vietnam-Light);
+  background-color: #ffffff;
+  background-color: var(--color-primary);
+  background-color: var(--color-rose-400);
+  color: #1a1c1c;
+  color: var(--color-on-primary);
+  /* font-weight: 600; */
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 100%;
+
+  border-radius: 4px;
+  margin-right: 13rem;
+   background-color: var(--color-primary-fixed-dim);
+
+  color: var(--color-on-surface-variant);
+  
+}
+
+.menu-content a:hover {
+  /* border:2px solid #1a1c1c; */
+  /* box-shadow: 0 4px 5px #1a1c1c; */
+  box-shadow: 0 4px 5px #79555c;
+  transform: scale(.9);
+}
+
+/* ====================== BREAKPOINTS ====================== */
+
+/* Small tablets & above */
+@media (min-width: 640px) {
+  .products {
+    margin-top: 4rem;
+  }
+}
+
+/* Tablet - Grid layout starts */
+@media (min-width: 768px) {
+  .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 3rem;
+  }
+  .menu-content a{
+    /* margin: unset; */
+      max-width: 25rem;
+  /* margin: 0 auto; */
+  }
+.menu-title {
+  font-size: 3rem;
+}
+  .products {
+    margin-top: 0;
+  }
+  .product-card-image {
+    aspect-ratio: 32 / 42.6;
+  }
+}
+@media (min-width: 768px)and (max-width:835px){
+  .menu-title {
+  font-size: 3rem;
+}
+}
+/* Large tablet to small desktop */
+@media (min-width: 1024px) {
+  .menu-container {
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+  }
+
+  .product-card-image {
+    aspect-ratio: 32 / 42.6;   
+    /* width: 32rem;
+    height: 42.6rem; */
+  }
+.menu-title {
+  font-size: 3.6rem;
+}
+  .product-name {
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop - matches your preferred spacing */
+@media (min-width: 1280px) {
+  .menu-container {
+    gap: 5rem;
+  }
+.menu-title {
+  font-size: 4rem;
+}
+  .product-card {
+    max-width: none;
+  }
+
+  .product-name {
+    padding-top: 1.4rem;
+    font-size: 1.7rem;
+  }
+}

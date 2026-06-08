@@ -1,0 +1,135 @@
+.bakery-section {
+  background: url('/images/bakery_bread.jpg') center/cover;
+  background-attachment: fixed;
+  padding: 5rem 0;
+  position: relative;
+}
+.bakery-content {
+  position: relative;
+  z-index: 2;
+}
+.bakery-container {
+  padding: 5rem 0;
+}
+/* .bakery-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #d7e4ecd3;
+  z-index: 1;
+
+} */
+.bakery-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  background: #775919a6;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+.bakery-section.overlay-active::before {
+  opacity: 1;
+}
+
+.bakery-section.overlay-active .bakery-content h2 {
+  /* color: #ffffff; */
+  color: var(--color-on-surface-variant);
+  color: #ffffff;
+}
+.bakery-section.overlay-active .bakery-content p {
+  /* color: #ffffff; */
+  color: var(--color-on-surface-variant);
+  color: #ffffff;
+}
+.bakery-section.overlay-active .bakery-content a {
+  background-color: var(--color-secondary-fixed-dim);
+  color: var(--color-on-surface-variant);
+}
+.bakery-image {
+  position: relative;
+  z-index: 2;
+}
+
+.bakery-content h2,
+.bakery-content p {
+  color: #5a666d;
+  color: #1a3d54;
+  color: var(--color-on-surface-variant);
+}
+.bakery-content h2 {
+  font-family: var(--font-noto-regular);
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  transition: .5s ease-in-out all;
+}
+.bakery-content p:first-child {
+  font-size: 1.4rem;
+  font-family: var(--font-vietnam-regular);
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  transition: all .5s ease-in-out;
+}
+.bakery-content p:nth-child(3) {
+  font-family: var(--font-vietnam-regular);
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 3.2rem;
+}
+.bakery-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.6rem 4rem;
+  min-height: 4.8rem;
+  font-size: 1.6rem;
+  font-family: var(--font-vietnam-Light);
+  /* background-color: #5a666d; */
+  color: var(--color-secondary-fixed-dim);
+  background-color: var(--color-on-surface-variant);
+  /* font-weight: 600; */
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: 100%;
+ 
+  border-radius: 4px;
+  transition: transform .5s ease-in-out ;
+}
+.bakery-content a:hover {
+
+  box-shadow: 0 4px 5px #d5dfdf;
+  transform: scale(.9);
+}
+.bakery-image img {
+  width: 100%;
+  height: auto;
+  
+}
+@media (min-width: 768px) {
+  .bakery-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .bakery-content h2 {
+    font-size: 3.5rem;
+  }
+  .bakery-content p:first-child {
+    font-size: 1.4rem;
+  }
+  .bakery-content p:nth-child(3) {
+   
+    font-size: 1.6rem;
+  }
+  .bakery-content a {
+    margin: unset;
+     max-width: 25rem;
+  /* margin: 0 auto; */
+  }
+}

@@ -1,0 +1,31 @@
+.logo-image {
+  /* filter: brightness(0) invert(1); */
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+
+  /* background-color: red; */
+}
+.logo-text {
+  font-family: var(--font-liberation-bold), serif;
+  /* margin-left: 0.5rem; */
+  line-height: 3.2;
+  font-size: 3vw;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #18181b;
+}
+
+@media (min-width: 768px) {
+  .logo-text {
+    letter-spacing: 4.8px;
+    font-size: 2rem;
+  }
+}
+
+@media(min-width: 800px) {
+  .logo-text {
+   font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,107 @@
+.menu-list {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  /* background-color: #c06b75; */
+background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  text-align: left; 
+  padding: 2rem 0;
+  padding-left: 4rem;
+  gap: 2rem;
+  list-style: none;
+  font-size: 2rem;
+  font-family: var(--font-liberation-regular);
+  transition: color 0.5s ease;
+}
+.menu-list a {
+  color: var(--text-color);
+  transition: color 0.5s ease-in-out;
+  font-family: var(--font-liberation-regular);
+  line-height: 2.0;
+  letter-spacing: -0.35px;
+  transition: color 0.5s ease;
+}
+
+.menu-list.active {
+  display: flex;
+}
+.menu-list a.active {
+  padding-bottom: 0;
+}
+.desktop-cart {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* .menu-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #4d0011;
+     background-color: #c06b75;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem 0;  
+  } */
+  /* .menu-list.active {
+    display: flex;
+  }
+  .menu-list a.active {
+    padding-bottom: 0;
+  } */
+  .menu-list {
+    display: flex;
+    
+    flex-direction: row;
+    height: unset;
+    width: unset;
+    position: unset;
+    text-align: unset;
+    align-items: center;
+    gap: 2rem;
+    background-color: unset;
+    transition: all 0.5s ease;
+  }
+  /* .menu-list a{
+    font-size: 1.4rem;
+  } */
+  .menu-list a:hover {
+   color: #5a5a5c;
+  }
+  .desktop-cart {
+    display: block;
+    position: relative;
+  }
+  .desktop-cart .cart-icon {
+    font-size: 1.7rem;
+    filter: brightness(0) invert(1);
+  }
+  /* .cart-icon-link{
+   
+  } */
+  .desktop-cart .cart-count {
+    position: absolute;
+    top: -2px;
+    right: 38px;
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 50%;
+
+    border: #fff 1px solid;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+@media(min-width:850px){
+  .menu-list  {
+    gap: 3.2rem;
+  }
+}
