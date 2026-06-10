@@ -78,7 +78,7 @@ html {
 *:before,
 *:after {
   -webkit-tap-highlight-color: transparent;
-  user-select: none;
+  /* user-select: none; */
 }
 a,
 button,

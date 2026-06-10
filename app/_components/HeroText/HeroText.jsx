@@ -17,7 +17,7 @@ export default function HeroText() {
             </p>
           </div>
 
-          <Link href='/cart'>Explore Our Products</Link>
+          <Link href='/products'>Explore Our Products</Link>
         </div>
       </div>
     </div>

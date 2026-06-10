@@ -8,7 +8,7 @@ import { useCartStore } from '@/app/_store/cartStore';
 export default function ProductsContent() {
   const [click, setClick] = useState('All');
   const addToCart  = useCartStore(state => state.addToCart);
-
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://labamboche.vercel.app';
   const productCountByCategory = productsList.reduce((acc, product) => {
     const cat = product.category.trim();
     acc[cat] = (acc[cat] || 0) + 1;
@@ -68,6 +68,7 @@ export default function ProductsContent() {
                       <p>{list.description}</p>
                       <p>{`$ ${list.price}`}</p>
                       <button
+                      
                         className='add-to-cart-btn'
                         onClick={() => addToCart(list)}
                       >

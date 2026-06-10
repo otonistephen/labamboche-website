@@ -1,28 +1,25 @@
-
 /* Hero Text Styles for Mobile */
 .hero-text {
   position: relative;
   z-index: 2;
-  /* background: rgba(245, 237, 238, 0.315); */
-  /* background: rgba(34, 33, 33, 0.068); */
-  /* background: #f7c8d0; */
-  padding: 2.5rem 1.8rem;
-  /* border-radius: 12px; */
- 
+
+  padding: 2.5rem 0;
+
+
   margin: 0 auto;
 }
 
 .hero-content {
   padding-bottom: 1.5rem;
 
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 
 .hero-p {
   font-family: var(--font-vietnam-regular);
   text-transform: uppercase;
   color: var(--color-primary-fixed);
-    color: var(--color-on-primary);
+  color: var(--color-on-primary);
   line-height: 1.1;
   letter-spacing: 0.03em;
   margin-bottom: 1rem;
@@ -35,7 +32,7 @@
   font-family: var(--font-noto-regular);
   /* font-size: 2.8rem; */
   /* font-size: clamp(4rem, 8vw, 4rem); */
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.1;
   letter-spacing: 0.03em;
   /* color: #1a1c1c; */
@@ -51,8 +48,8 @@
   line-height: 1.55;
   color: #4d4447;
   color: var(--color-on-primary);
-   /* color: var(--color-on-surface-variant); */
-   /* color: var(--color-on-primary-container); */
+  /* color: var(--color-on-surface-variant); */
+  /* color: var(--color-on-primary-container); */
   margin-bottom: 2rem;
   /* font-size: clamp(1.6rem, 2.5vw, 1.6rem); */
   font-size: 1.8rem;
@@ -60,12 +57,13 @@
 
 .hero-content a {
   display: inline-block;
- 
+
   /* color: #f9f9f9; */
   /* color: var(--color-on-surface-varient); */
-  color: var( --color-on-primary);
+  color: var(--color-on-secondary-container);
   font-family: var(--font-vietnam-Light);
   font-size: 1.5rem;
+
   padding: 1.5rem 4.2rem;
   letter-spacing: 1px;
   text-decoration: none;
@@ -73,17 +71,17 @@
   font-weight: 500;
   min-height: 4.4rem;
   transition: 0.5s ease;
- text-transform: uppercase;
+  text-transform: uppercase;
   background-color: var(--color-primary-fixed-dim);
 
-  color: var(--color-on-surface-variant);
+
 }
 .hero-content a:hover {
   /* background-color: var(--color-primary-fixed); */
   background-color: var(--color-primary-fixed);
 }
-@media(min-width:400px) and (max-width:900px){
-  .hero-content{
+@media (min-width: 400px) and (max-width: 900px) {
+  .hero-content {
     padding-top: 10rem;
   }
 }
@@ -96,25 +94,20 @@
     margin: 0;
     padding-right: 2rem;
   }
-.hero-content {
-   
+  .hero-content {
     padding-top: 0;
   }
   .hero-content .hero-p {
-
-
     line-height: 1.6;
 
-   
     margin-bottom: 1.51rem;
   }
   .hero-content h1 {
-  
     line-height: 1.1;
     /* font-size: clamp(4rem, 4vw, 6rem); */
     letter-spacing: 0.03em;
     /* text-wrap: balance; */
-  font-size: 6rem;
+    font-size: 6rem;
     /* margin-bottom: 1.5rem; */
   }
   .hero-text-description {
