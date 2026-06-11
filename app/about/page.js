@@ -33,6 +33,7 @@ export default function About() {
                   <Image
                     src={images.background_image}
                     alt='about us image'
+                    loading='eager'
                     width={400}
                     height={550}
                     className='about-image'
@@ -125,8 +126,8 @@ export default function About() {
             <div className='quote'>
               <div className='quote-container'>
                 <q>
-                  To create something truly beautiful, one you first respect
-                  the silence between the flavors 
+                  To create something truly beautiful, one you first respect the
+                  silence between the flavors
                 </q>
                 <p>- Julien mercier</p>
               </div>
