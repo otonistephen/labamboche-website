@@ -76,8 +76,7 @@ import { redirect } from 'next/navigation';
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export async function createCheckoutSession(cartItems) {
-  // Improved baseUrl logic (more reliable on Vercel)
-  // Improved baseUrl logic
+
   let baseUrl = process.env.NEXT_PUBLIC_APP_URL;
 
   if (!baseUrl) {
