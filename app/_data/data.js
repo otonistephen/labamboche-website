@@ -76,7 +76,7 @@ export const images = {
   party_size: '/images/party_size.svg',
   delete_icon: '/images/delete_icon.svg',
   profile_image: '/images/profile_image.png',
-  background_image: '/images/background_image.PNG',
+  background_image: '/images/background_image.png',
 
   cakes: '/new-images/cakes.svg',
   cookies: '/new-images/cookies.svg',
