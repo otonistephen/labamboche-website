@@ -1,6 +1,7 @@
 import { artisanList } from '../_data/data';
 import './about.css';
 import Image from 'next/image';
+import { images } from '../_data/data';
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
               <div className='about-image-container'>
                 <div className='about-image-wrapper'>
                   <Image
-                    src='/images/background.PNG'
+                    src={images.background_image}
                     alt='about us image'
                     width={400}
                     height={550}
