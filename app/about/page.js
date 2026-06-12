@@ -31,7 +31,7 @@ export default function About() {
               <div className='about-image-container'>
                 <div className='about-image-wrapper'>
                   <Image
-                    src={images.background_image}
+                    src={images.about_background}
                     alt='about us image'
                     loading='eager'
                     width={400}

@@ -76,7 +76,7 @@ export const images = {
   party_size: '/images/party_size.svg',
   delete_icon: '/images/delete_icon.svg',
   profile_image: '/images/profile_image.png',
-  background_image: '/images/background_image.png',
+  about_background: '/images/about_background.png',
 
   cakes: '/new-images/cakes.svg',
   cookies: '/new-images/cookies.svg',
@@ -91,30 +91,30 @@ export const images = {
 };
 export const menuList = [
   {
-    id:1,
-    name:'cakes and macaroons'
+    id: 1,
+    name: 'cakes and macaroons',
   },
   {
-    id:2,
-    name:'Cookies and Tart'
+    id: 2,
+    name: 'Cookies and Tart',
   },
   {
-    id:3,
-    name:'croissants and pastries'
+    id: 3,
+    name: 'croissants and pastries',
   },
   {
-    id:4,
-    name:'jam, honey and beverages'
+    id: 4,
+    name: 'jam, honey and beverages',
   },
   {
-    id:5,
-    name:'pasta, quiches, soups and sandwishes'
+    id: 5,
+    name: 'pasta, quiches, soups and sandwishes',
   },
   {
-    id:6,
-    name: 'scones, muffins and bread'
-  }
-]
+    id: 6,
+    name: 'scones, muffins and bread',
+  },
+];
 export const listMenu = [
   {
     id: 1,
@@ -501,8 +501,4 @@ export const artisanList = [
   },
 ];
 
-export const suggestionList = [
-  {
-
-  }
-]
+export const suggestionList = [{}];
