@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "boxicons": "^2.1.4",
+    "framer-motion": "^12.40.0",
     "leaflet": "^1.9.4",
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "next": "16.2.4",

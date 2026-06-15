@@ -53,6 +53,8 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem 0 4rem 0;
+  /* opacity: 0;
+  animation: slideBottom 3s ease forwards; */
 }
 
 @media (min-width: 640px) {

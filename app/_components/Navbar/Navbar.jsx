@@ -12,7 +12,14 @@ export default function Navbar() {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  // const closeMobileMenu = () => setClick(false);
+    const closeMobileMenu = () => {
+    if (window.innerWidth <= 768) {
+      setTimeout(() => setClick(false), 700);
+    } else {
+      setClick(false);
+    }
+  };
   const totalItems = useCartStore(state => state.getTotalItems());
 
   useEffect(() => {

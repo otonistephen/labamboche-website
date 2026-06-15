@@ -1,10 +1,14 @@
 .products-content {
   padding-bottom: 2rem;
 }
-.products-container{
+.products-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5rem;
+}
+.products-menu {
+  opacity: 0;
+  animation: slideRight 3s ease forwards;
 }
 .products-menu h3 {
   font-family: var(--font-noto-regular);
@@ -19,6 +23,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: 3rem;
+}
+.products-content-wrapper {
+  opacity: 0;
+  animation: slideLeft 3s ease forwards;
 }
 .products-content-wrapper .products-content-header {
   font-family: var(--font-noto-bold);
@@ -38,7 +46,6 @@
   font-weight: 500;
   margin-bottom: 1.6rem;
   list-style: none;
-
 }
 .name-count {
   display: flex;
@@ -49,7 +56,7 @@
 }
 .name-count p:first-of-type {
   font-family: var(--font-vietnam-regular);
-   color: #5E5F5D;
+  color: #5e5f5d;
 }
 
 .category-card {
@@ -86,7 +93,7 @@
 }
 .category-content button {
   background-color: var(--color-primary);
-      background-color: var(--color-primary-fixed-dim);
+  background-color: var(--color-primary-fixed-dim);
   color: var(--color-on-surface-variant);
   padding: 1rem 1.5rem;
   border: none;
@@ -134,5 +141,4 @@
     grid-template-columns: 1.5fr 4fr;
     gap: 11rem;
   }
- 
 }

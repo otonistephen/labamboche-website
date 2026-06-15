@@ -2,6 +2,11 @@
   text-align: center;
   padding: 4.7rem 0 4.8rem 0;
 }
+.products-hero-header{
+  opacity: 0;
+  animation: slideBottom 3s ease forwards;
+  animation-delay: .2s;
+}
 .products-hero-header h1{
   font-family: var(--font-noto-bold);
   color: #79555C;

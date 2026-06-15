@@ -3,6 +3,7 @@ import { mostPopular } from '@/app/_data/data';
 import './MostPopular.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { useCartStore } from '@/app/_store/cartStore';
 
 export default function MostPopular() {
@@ -10,42 +11,55 @@ export default function MostPopular() {
 
   return (
     <section className='most-popular'>
-      <div className='container'>
-        <h2>most popular</h2>
-        <div className='container-popular'>
-          {mostPopular.map((item, index) => (
-            <div className='card-popular' key={item.id}>
-              <div className='image-container'>
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={150}
-                  height={150}
-                />
-              </div>
-              <div className='image-popular-content'>
-                <div>
-                  <h3 className='name-price'>
-                    {item.name}
-                    <p className='product-price'>{`$${item.price}`}</p>
-                  </h3>
+      <motion.div
+        className='content-container'
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.5,
+          type: 'tween',
+          ease: 'easeOut',
+        }}
+        viewport={{ once: true }}
+      >
+        <div className='container'>
+          <h2>most popular</h2>
+          <div className='container-popular'>
+            {mostPopular.map((item, index) => (
+              <div className='card-popular' key={item.id}>
+                <div className='image-container'>
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    width={150}
+                    height={150}
+                  />
                 </div>
+                <div className='image-popular-content'>
+                  <div>
+                    <h3 className='name-price'>
+                      {item.name}
+                      <p className='product-price'>{`$${item.price}`}</p>
+                    </h3>
+                  </div>
 
-                <p className='popular-content-description'>{item.description}</p>
+                  <p className='popular-content-description'>
+                    {item.description}
+                  </p>
 
-                <button onClick={() => addToCart(item)}>add to cart</button>
+                  <button onClick={() => addToCart(item)}>add to cart</button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <br />
+          <br />
+          <div className='view-more'>
+            <Link href='/products'>View more products »»</Link>
+          </div>
         </div>
-        <br />
-        <br />
-        <div className='view-more'>
-          <Link href='/products'>
-            View more products »»
-          </Link>
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

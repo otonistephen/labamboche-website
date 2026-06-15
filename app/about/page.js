@@ -2,6 +2,7 @@ import { artisanList } from '../_data/data';
 import './about.css';
 import Image from 'next/image';
 import { images } from '../_data/data';
+import FadeInSection from '../_components/FadeInSection';
 
 export default function About() {
   return (
@@ -51,78 +52,83 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        <div className='philosophy'>
-          <div className='container'>
-            <div className='philosophy-header'>
-              <h4 className='sub-header'>The philosophy</h4>
-              <h3>purity. precision. passion</h3>
-              <p>
-                We believe that a pastry is more than a dessert; it is a
-                momentary escape. Our philosophy rests on three pillars that
-                guide every fold of dough and every drop of ganache.
-              </p>
-            </div>
-
-            <div className='core-values'>
-              <div className='source'>
-                <h5>source</h5>
+        <FadeInSection>
+          <div className='philosophy'>
+            <div className='container'>
+              <div className='philosophy-header'>
+                <h4 className='sub-header'>The philosophy</h4>
+                <h3>purity. precision. passion</h3>
                 <p>
-                  Exceptional flavor begins at the source. We partner with local
-                  Ontario orchards for our fruits and import AOP butter from
-                  Charentes- Poitou to ensure authentic French laminated
-                  textures.
+                  We believe that a pastry is more than a dessert; it is a
+                  momentary escape. Our philosophy rests on three pillars that
+                  guide every fold of dough and every drop of ganache.
                 </p>
               </div>
-              <div className='technique'>
-                <h5>technique</h5>
-                <p>
-                  Respect for tradition is non-negotiable. Our chefs utilize
-                  classic French methods—some dating back centuries—while
-                  embracing modern technology to achieve perfect consistency.
-                </p>
-              </div>
-              <div className='aesthetic'>
-                <h5>aesthetic</h5>
-                <p>
-                  We eat with our eyes first. Our design language is rooted in
-                  minimalism, allowing the natural colors of ingredients and the
-                  geometry of the pastry to speak for themselves.
-                </p>
+
+              <div className='core-values'>
+                <div className='source'>
+                  <h5>source</h5>
+                  <p>
+                    Exceptional flavor begins at the source. We partner with
+                    local Ontario orchards for our fruits and import AOP butter
+                    from Charentes- Poitou to ensure authentic French laminated
+                    textures.
+                  </p>
+                </div>
+                <div className='technique'>
+                  <h5>technique</h5>
+                  <p>
+                    Respect for tradition is non-negotiable. Our chefs utilize
+                    classic French methods—some dating back centuries—while
+                    embracing modern technology to achieve perfect consistency.
+                  </p>
+                </div>
+                <div className='aesthetic'>
+                  <h5>aesthetic</h5>
+                  <p>
+                    We eat with our eyes first. Our design language is rooted in
+                    minimalism, allowing the natural colors of ingredients and
+                    the geometry of the pastry to speak for themselves.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </FadeInSection>
 
         <div className='artisans'>
           <div className='container'>
-            <div className='artisan-header'>
-              <h4>meet the artisans</h4>
-              <h3>The hands behind the craft</h3>
-            </div>
-
-            <div className='artisan-card-container'>
-              {artisanList.map(list => (
-                <div key={list.id} className='artisan-card-wrapper'>
-                  <div className='artisan-image-wrapper'>
-                    <div className='image-wrapper'>
-                      <Image
-                        src={list.image}
-                        alt={`${list.image} image`}
-                        width={280}
-                        height={373}
-                        loading='eager'
-                      />
-                    </div>
-                    <div className='artisan-content'>
-                      <p>{list.name}</p>
-                      <p>{list.position}</p>
+            
+            <FadeInSection>
+              <div className='artisan-header'>
+                <h4>meet the artisans</h4>
+                <h3>The hands behind the craft</h3>
+              </div>
+            </FadeInSection>
+            <FadeInSection>
+              <div className='artisan-card-container'>
+                {artisanList.map(list => (
+                  <div key={list.id} className='artisan-card-wrapper'>
+                    <div className='artisan-image-wrapper'>
+                      <div className='image-wrapper'>
+                        <Image
+                          src={list.image}
+                          alt={`${list.image} image`}
+                          width={280}
+                          height={373}
+                          loading='eager'
+                        />
+                      </div>
+                      <div className='artisan-content'>
+                        <p>{list.name}</p>
+                        <p>{list.position}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
-
+                ))}
+              </div>
+            </FadeInSection>
+             <FadeInSection>
             <div className='quote'>
               <div className='quote-container'>
                 <q>
@@ -132,6 +138,7 @@ export default function About() {
                 <p>- Julien mercier</p>
               </div>
             </div>
+            </FadeInSection>
           </div>
         </div>
       </section>

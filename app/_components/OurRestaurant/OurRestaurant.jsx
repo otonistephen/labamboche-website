@@ -3,6 +3,7 @@ import './OurRestaurant.css';
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { images } from '@/app/_data/data';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function OurRestaurant() {
@@ -56,33 +57,44 @@ export default function OurRestaurant() {
   }, []);
 
   return (
-    <section ref={sectionRef} className='our-restaurant'>
-      <div className='container'>
-        <div className='our-restaurant-wrapper'>
-          
-
-          <div className='our-restaurant-content'>
-            <div className='restaurant-image-wrapper'>
-              <Image
-                src={images.restaurant_image}
-                alt='restaurant image'
-                width={1300}
-                height={500}
-              />
+    <motion.div
+      className='content-container'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.5,
+        type: 'tween',
+        ease: 'easeOut',
+      }}
+      viewport={{ once: true }}
+    >
+      <section ref={sectionRef} className='our-restaurant'>
+        <div className='container'>
+          <div className='our-restaurant-wrapper'>
+            <div className='our-restaurant-content'>
+              <div className='restaurant-image-wrapper'>
+                <Image
+                  src={images.restaurant_image}
+                  alt='restaurant image'
+                  width={1300}
+                  height={500}
+                />
+              </div>
+              <div className='restaurant-content'>
+                <h3>Lumière</h3>
+                <p>
+                  Enjoy a comfortable environment for hanging out with friends
+                  and family, enjoying a business conversation, with good coffee
+                  and amazing pastry and lunch options. We also offer
+                  gluten-free and vegan cookies.
+                </p>
+              </div>
             </div>
-            <div className='restaurant-content'>
-              <h3>Lumière</h3>
-              <p>
-                Enjoy a comfortable environment for hanging out with friends and
-                family, enjoying a business conversation, with good coffee and
-                amazing pastry and lunch options. We also offer gluten-free and
-                vegan cookies.
-              </p>
-            </div>
+            <h2>Our Restaurant</h2>
           </div>
-          <h2>Our Restaurant</h2>
         </div>
-      </div>
-    </section>
+      </section>
+    </motion.div>
   );
 }

@@ -1,5 +1,6 @@
+'use client';
+import FadeInSection from '../FadeInSection';
 import './ProductsHero.css';
-
 
 export default function ProductsHero() {
   return (

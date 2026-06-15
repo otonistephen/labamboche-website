@@ -2,11 +2,11 @@
 .hero-text {
   position: relative;
   z-index: 2;
-
   padding: 2.5rem 0;
-
-
   margin: 0 auto;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .hero-content {
@@ -26,6 +26,9 @@
   /* font-size: 1rem; */
   /* font-size: clamp(1.2rem, 2.5vw, 1.3rem); */
   font-size: 1.4rem;
+  opacity: 0;
+  animation: slideRight 3s ease forwards;
+  animation-delay: 1.5s;
 }
 
 .hero-content h1 {
@@ -40,6 +43,9 @@
   font-weight: 400;
   margin-bottom: 1.2rem;
   text-transform: uppercase;
+  opacity: 0;
+  animation: slideLeft 3s ease forwards;
+  animation-delay: 1.5s;
 }
 
 .hero-text-description p {
@@ -53,6 +59,9 @@
   margin-bottom: 2rem;
   /* font-size: clamp(1.6rem, 2.5vw, 1.6rem); */
   font-size: 1.8rem;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .hero-content a {
@@ -73,8 +82,9 @@
   transition: 0.5s ease;
   text-transform: uppercase;
   background-color: var(--color-primary-fixed-dim);
-
-
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.7s;
 }
 .hero-content a:hover {
   /* background-color: var(--color-primary-fixed); */
