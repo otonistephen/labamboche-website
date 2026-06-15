@@ -4,6 +4,7 @@ import { categoriesList, productsList } from '@/app/_data/data';
 import Image from 'next/image';
 import './ProductsContent.css';
 import { useCartStore } from '@/app/_store/cartStore';
+import Link from 'next/link';
 
 export default function ProductsContent() {
   const [click, setClick] = useState('All');
@@ -46,7 +47,8 @@ export default function ProductsContent() {
           <div className='custom-order'>
             <h5>custom order</h5>
             <p>Need something unique for an event ?</p>
-            <a href='#'>enquire now</a>
+            {/* <a href='#'></a> */}
+            <Link href='/contact'>enquire now</Link>
           </div>
         </div>
         <div className='products-content-wrapper'>
