@@ -1,8 +1,9 @@
-'use client'
+'use client';
 import Image from 'next/image';
 import './Footer.css';
 import { images } from '@/app/_data/data';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -94,13 +95,16 @@ export default function Footer() {
             <ul className='follow-us'>
               <h2>Follow Us</h2>
               <li>
-                <Image
-                  src={images.instagram}
-                  alt='location image'
-                  width={20}
-                  height={20}
-                  className='location-image follow-image'
-                />{' '}
+                <Link href='https://www.instagram.com/labamboche/' target='_blank' rel='noopener noreferrer'>
+                  {' '}
+                  <Image
+                    src={images.instagram}
+                    alt='location image'
+                    width={20}
+                    height={20}
+                    className='location-image follow-image'
+                  />{' '}
+                </Link>
               </li>
             </ul>
           </div>
