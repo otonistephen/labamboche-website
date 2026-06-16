@@ -87,14 +87,10 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all ease-in-out .5s;
-
-  /* background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  text-transform: capitalize; */
+}
+.card-popular button:hover{
+    /* box-shadow: 0 4px 5px #d5dfdf; */
+  transform: scale(1.1);
 }
 .popular-content-description{
   /* background-color: #1a1c1c; */
