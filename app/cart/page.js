@@ -1,6 +1,6 @@
 'use client';
 
-// import './cart.css';
+
 import './cartPage.css';
 import Image from 'next/image';
 import Link from 'next/link';

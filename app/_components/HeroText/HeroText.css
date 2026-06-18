@@ -33,12 +33,10 @@
 
 .hero-content h1 {
   font-family: var(--font-noto-regular);
-  /* font-size: 2.8rem; */
-  /* font-size: clamp(4rem, 8vw, 4rem); */
+
   font-size: 3.5rem;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  /* color: #1a1c1c; */
   color: var(--color-on-primary);
   font-weight: 400;
   margin-bottom: 1.2rem;
@@ -68,9 +66,10 @@
   align-items: center;
   justify-content: center;
 
-  /* color: #f9f9f9; */
-  /* color: var(--color-on-surface-varient); */
+  
+  
   color: var(--color-on-secondary-container);
+  color: var(--color-on-surface);
   font-family: var(--font-vietnam-Light);
   font-size: 1.5rem;
 
@@ -79,7 +78,7 @@
   text-decoration: none;
   border-radius: 4px;
   font-weight: 500;
-  /* min-height: 4.4rem; */
+
   transition: all 0.5s ease;
   text-transform: uppercase;
 background-color: var(--color-rose-300);
@@ -118,11 +117,8 @@ background-color: var(--color-rose-300);
   }
   .hero-content h1 {
     line-height: 1.1;
-    /* font-size: clamp(4rem, 4vw, 6rem); */
-    letter-spacing: 0.03em;
-    /* text-wrap: balance; */
-    font-size: 6rem;
-    /* margin-bottom: 1.5rem; */
+    letter-spacing: 0.03em; 
+    font-size: 6rem; 
   }
   .hero-text-description {
     padding-top: 1.5rem;

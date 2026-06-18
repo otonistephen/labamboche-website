@@ -11,14 +11,6 @@
 .bakery-container {
   padding: 5rem 0;
 }
-/* .bakery-section::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: #d7e4ecd3;
-  z-index: 1;
-
-} */
 .bakery-section::before {
   content: '';
   position: absolute;
@@ -35,13 +27,9 @@
 }
 
 .bakery-section.overlay-active .bakery-content h2 {
-  /* color: #ffffff; */
-  color: var(--color-on-surface-variant);
   color: #ffffff;
 }
 .bakery-section.overlay-active .bakery-content p {
-  /* color: #ffffff; */
-  color: var(--color-on-surface-variant);
   color: #ffffff;
 }
 .bakery-section.overlay-active .bakery-content a {
@@ -55,8 +43,7 @@
 
 .bakery-content h2,
 .bakery-content p {
-  color: #5a666d;
-  color: #1a3d54;
+
   color: var(--color-on-surface-variant);
 }
 .bakery-content h2 {
@@ -87,16 +74,13 @@
   min-height: 4.8rem;
   font-size: 1.6rem;
   font-family: var(--font-vietnam-Light);
-  /* background-color: #5a666d; */
   color: var(--color-secondary-fixed-dim);
   background-color: var(--color-on-surface-variant);
-  /* font-weight: 600; */
   text-transform: uppercase;
   letter-spacing: 1.2px;
   cursor: pointer;
   transition: all 0.5s ease;
   width: 100%;
- 
   border-radius: 4px;
   transition: transform .5s ease-in-out ;
 }
@@ -124,12 +108,11 @@
     font-size: 1.4rem;
   }
   .bakery-content p:nth-child(3) {
-   
     font-size: 1.6rem;
   }
   .bakery-content a {
     margin: unset;
      max-width: 25rem;
-  /* margin: 0 auto; */
+
   }
 }

@@ -9,7 +9,8 @@ export default function HeroText() {
         <div className='hero-content'>
           <p className='hero-p'>Handcrafted with care</p>
           <h1>
-             French Bakery at <br /> La bamboche
+             {/* French Bakery at <br /> La bamboche */}
+             French and Japanese Inspired Pastry
           </h1>
           <div className='hero-text-description'>
             <p>

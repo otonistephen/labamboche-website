@@ -116,9 +116,7 @@
   font-size: 1.6rem;
   /* border: 1.5px solid #7f7478; */
   font-family: var(--font-vietnam-Light);
-  background-color: #ffffff;
-  background-color: var(--color-primary);
-  background-color: var(--color-rose-400);
+ 
   color: #1a1c1c;
   color: var(--color-on-primary);
   /* font-weight: 600; */
@@ -131,8 +129,7 @@
   border-radius: 4px;
   margin-right: 13rem;
    background-color: var(--color-primary-fixed-dim);
-
-  color: var(--color-secondary);
+  color: var(--color-on-surface);
   
 }
 

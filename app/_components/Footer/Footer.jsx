@@ -56,7 +56,7 @@ export default function Footer() {
                   height={20}
                   className='location-image'
                 />
-                <p> +23 444 333333</p>
+                <p> +1 416-776-5353</p>
               </li>
               <li>
                 <Image
@@ -66,7 +66,7 @@ export default function Footer() {
                   height={20}
                   className='location-image'
                 />{' '}
-                <p> labamboche@gmail.com</p>
+                <p> info@labamboche.ca</p>
               </li>
             </ul>
             <ul className='opening-hours'>

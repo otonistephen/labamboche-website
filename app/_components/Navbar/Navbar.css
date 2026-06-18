@@ -47,13 +47,19 @@ body.dark-section-active .logo-text {
   color: var(--color-secondary-container);
 }
 body.dark-section-active .logo-image {
-  filter: invert(1);
+  /* filter: invert(1); */
+  
+  filter: invert(71%) sepia(68%) saturate(803%) hue-rotate(351deg) brightness(103%) contrast(104%);
+  
+ 
 }
 body.dark-section-active .cart-link img {
   filter: invert();
+  filter: invert(71%) sepia(68%) saturate(803%) hue-rotate(351deg) brightness(103%) contrast(104%);
 }
 body.dark-section-active .profile-link img {
   filter: invert();
+  filter: invert(71%) sepia(68%) saturate(803%) hue-rotate(351deg) brightness(103%) contrast(104%);
 }
 body.dark-section-active .menu-list {
   background-color: #2f3131;
