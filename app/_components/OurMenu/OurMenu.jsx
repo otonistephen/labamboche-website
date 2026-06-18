@@ -12,11 +12,13 @@ import Link from 'next/link';
 import { listMenu } from '@/app/_data/data';
 import { menuList } from '@/app/_data/data';
 import { images } from '@/app/_data/data';
+import FadeInSection from '../FadeInSection';
 
 export default function OurMenu() {
   return (
-    <section className='menu' id='menu'>
-      <motion.div
+  
+      <section className='menu' id='menu'>
+        <motion.div
         className='content-container'
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +73,6 @@ export default function OurMenu() {
                           <Image
                             src={item.img}
                             alt={item.name}
-                            // sizes='(max-width: 480px) 40vw, (max-width: 768px) 30vw, 192px'
                             sizes='(max-width: 640px) 55vw, (max-width: 1024px) 35vw, 320px'
                             fill
                             style={{ objectFit: 'cover' }}
@@ -88,7 +89,8 @@ export default function OurMenu() {
             </div>
           </div>
         </div>
-      </motion.div>
-    </section>
+        </motion.div>
+      </section>
+  
   );
 }

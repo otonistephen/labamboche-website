@@ -12,48 +12,57 @@ const notoRegular = localFont({
   src: './_font/NotoSerif-Regular.woff2',
   variable: '--font-noto-regular',
   style: 'normal',
+  display: 'swap',
 });
 
 const notoBold = localFont({
   src: './_font/NotoSerif-Bold.woff2',
   variable: '--font-noto-bold',
   style: 'normal',
+  display: 'swap',
 });
 const liberationRegular = localFont({
   src: './_font/LiberationSerif-Regular.woff2',
   variable: '--font-liberation-regular',
   style: 'normal',
+  display: 'swap',
 });
 
 const liberationBold = localFont({
   src: './_font/LiberationSerif-Bold.woff2',
   variable: '--font-liberation-bold',
   style: 'normal',
+  display: 'swap',
 });
 const vietnamProRegular = localFont({
   src: './_font/BeVietnamPro-Regular.ttf',
   variable: '--font-vietnam-regular',
   style: 'normal',
+  display: 'swap',
 });
 const vietnamProSemiBold = localFont({
   src: './_font/BeVietnamPro-SemiBold.woff2',
   variable: '--font-vietnam-pro-semi-bold',
   style: 'normal',
+  display: 'swap',
 });
 const vietnamProExtraLight = localFont({
   src: './_font/BeVietnamPro-ExtraLight.woff2',
   variable: '--font-vietnam-Extra-Light',
   style: 'normal',
+  display: 'swap',
 });
 const vietnamProLight = localFont({
   src: './_font/BeVietnamPro-Light.woff2',
   variable: '--font-vietnam-Light',
   style: 'normal',
+  display: 'swap',
 });
 export default function RootLayout({ children }) {
   return (
-    <html lang='en' className=''>
+    <html lang='en' suppressHydrationWarning>
       <body
+      suppressHydrationWarning={true}
         className={`${notoRegular.variable} ${notoBold.variable} ${liberationRegular.variable} ${liberationBold.variable}${vietnamProSemiBold.variable}
         ${vietnamProExtraLight.variable} ${vietnamProLight.variable} ${vietnamProRegular.variable} `}
       >

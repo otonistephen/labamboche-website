@@ -6,7 +6,7 @@ import Location from './_components/Location/Location';
 import MostPopular from './_components/MostPopular/MostPopular';
 import OurMenu from './_components/OurMenu/OurMenu';
 import OurRestaurant from './_components/OurRestaurant/OurRestaurant';
-import Restaurant from './_components/Restaurant/Restaurant';
+
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         <OurMenu/>
         <Bakery/>
         <MostPopular/>
-        {/* <Restaurant/> */}
+       
         <OurRestaurant/>
         <AfterDark/>
         <Blog/>

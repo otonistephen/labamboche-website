@@ -95,7 +95,11 @@ export default function Footer() {
             <ul className='follow-us'>
               <h2>Follow Us</h2>
               <li>
-                <Link href='https://www.instagram.com/labamboche/' target='_blank' rel='noopener noreferrer'>
+                <Link
+                  href='https://www.instagram.com/labamboche/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   {' '}
                   <Image
                     src={images.instagram}
