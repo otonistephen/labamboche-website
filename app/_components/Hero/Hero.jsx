@@ -1,4 +1,4 @@
-import HeroImage from '../HeroImage/HeroImage';
+
 import HeroText from '../HeroText/HeroText';
 import './Hero.css';
 import Image from 'next/image';
@@ -21,7 +21,6 @@ export default function Hero() {
       <div className='container'>
         <div className='hero-container'>
           <HeroText />
-          {/* <HeroImage /> */}
         </div>
       </div>
     </section>
