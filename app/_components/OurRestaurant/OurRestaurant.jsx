@@ -58,18 +58,19 @@ export default function OurRestaurant() {
 
   return (
     <motion.div
-      className='content-container'
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.5,
-        type: 'tween',
-        ease: 'easeOut',
-      }}
-      viewport={{ once: true }}
-    >
-      <section ref={sectionRef} className='our-restaurant'>
+        className='content-container'
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.5,
+          delay: 0.5,
+          type: 'tween',
+          ease: 'easeOut',
+        }}
+        viewport={{ once: true }}
+      >
+    <section ref={sectionRef} className='our-restaurant'>
+      
         <div className='container'>
           <div className='our-restaurant-wrapper'>
             <div className='our-restaurant-content'>
@@ -77,8 +78,8 @@ export default function OurRestaurant() {
                 <Image
                   src={images.restaurant_image}
                   alt='restaurant image'
-                  width={1300}
-                  height={500}
+                 fill
+                 sizes='(max-width: 768px) 100vw, 1300px'
                 />
               </div>
               <div className='restaurant-content'>
@@ -94,7 +95,8 @@ export default function OurRestaurant() {
             <h2>Our Restaurant</h2>
           </div>
         </div>
-      </section>
+      
+    </section>
     </motion.div>
   );
 }

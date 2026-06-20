@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { blogList } from '@/app/_data/data';
 import './Blog.css';
 import Image from 'next/image';
@@ -34,8 +34,9 @@ export default function Blog() {
                   <Image
                     src={list.image}
                     alt={list.title}
-                    width={250}
+                    width={400}
                     height={200}
+                 
                     className='blog-content-image'
                   />
                 </div>

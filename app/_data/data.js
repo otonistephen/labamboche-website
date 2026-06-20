@@ -77,6 +77,16 @@ export const images = {
   delete_icon: '/images/delete_icon.svg',
   profile_image: '/images/profile_image.png',
   about_background: '/images/about_background.png',
+  afterdark_img: '/images/afterdark_img.webp',
+
+  gradient_img: '/image/gradient_img.webp',
+  cakes_img: '/image/cakes_img.webp',
+  cookies_img: '/image/cookies_img.webp',
+  crossiant_img: '/image/crossiant_img.webp',
+  scone_img: '/image/scone_img.webp',
+  pasta_img: '/image/pasta_img.webp',
+  cupcakes_img: '/image/cupcakes_img.webp',
+  sandwish_img: '/image/sandwish_img.webp',
 
   cakes: '/new-images/cakes.svg',
   cookies: '/new-images/cookies.svg',
@@ -119,41 +129,41 @@ export const listMenu = [
   {
     id: 1,
     name: 'cookies and tart',
-    img: images.cookies,
+    img: images.cookies_img,
   },
   {
     id: 2,
     name: 'cakes ',
-    img: images.cakes,
+    img: images.cakes_img,
   },
   {
     id: 3,
     name: 'crossiant',
-    img: images.crossiant,
+    img: images.crossiant_img,
   },
   {
     id: 4,
     name: 'scone',
-    img: images.gradient_bg,
+    img: images.gradient_img,
   },
   {
     id: 5,
     name: 'cupcake',
-    img: images.cupcakes,
+    img: images.cupcakes_img,
   },
   {
     id: 6,
     name: 'pasta',
-    img: images.pasta,
+    img: images.pasta_img,
   },
   {
     id: 7,
     name: 'scone bread',
-    img: images.scone_bread,
+    img: images.scone_img,
   },
   {
     id: 8,
-    img: images.sandwish,
+    img: images.sandwish_img,
     name: 'sandwish',
   },
 ];

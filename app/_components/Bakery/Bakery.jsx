@@ -72,7 +72,7 @@ export default function Bakery() {
                 we have them ready to serve.
               </p>
               <Link href='/contact' className='bakery-btn'>
-                order now
+                buy wholesale
               </Link>
             </div>
             <div className='bakery-image'>

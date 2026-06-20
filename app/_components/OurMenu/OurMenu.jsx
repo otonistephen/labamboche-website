@@ -11,8 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { listMenu } from '@/app/_data/data';
 import { menuList } from '@/app/_data/data';
-import { images } from '@/app/_data/data';
-import FadeInSection from '../FadeInSection';
+
 
 export default function OurMenu() {
   return (

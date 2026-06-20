@@ -21,21 +21,24 @@ export default function MapLocation() {
   const leslievillePos = [43.66047, -79.34218];
   const leslievilleAddress = '892 Queen St E, Toronto, ON M4M 1J3, Canada';
   const leslievilleEncoded = encodeURIComponent(leslievilleAddress);
-  const leslievilleDirections = `https://www.google.com/maps/dir/?api=1&destination=${leslievilleEncoded}`;
+  // const leslievilleDirections = `https://www.google.com/maps/dir/?api=1&destination=${leslievilleEncoded}`;
   //custom icon
-
+  const leslievilleDirections = `http://maps.google.com/?q=${leslievilleEncoded}`;
   const customIcon = L.icon({
     iconUrl: '/images/logo.png',
     iconSize: [50, 50],
     iconAnchor: [25, 50],
     popupAnchor: [0, -50],
   });
+
+  // Fixed template string syntax with $
+
   // North York location
   const northYorkPos = [43.73085, -79.41952]; // Precise coordinates for 1712 Avenue Rd
   const northYorkAddress = '1712 Avenue Rd, North York, ON M5M 3Y6, Canada';
   const northYorkEncoded = encodeURIComponent(northYorkAddress);
-  const northYorkDirections = `https://www.google.com/maps/dir/?api=1&destination=${northYorkEncoded}`;
-
+  // const northYorkDirections = `https://www.google.com/maps/dir/?api=1&destination=${northYorkEncoded}`;
+  const northYorkDirections = `http://maps.google.com/?q=${northYorkEncoded}`;
   return (
     <section className='location-map-section' id='locations'>
       <div className='container'>

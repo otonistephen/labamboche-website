@@ -2,7 +2,7 @@
   padding: 10rem 0;
   /* padding-bottom: 20rem; */
   transition: opacity 0.5s ease;
-  background: url('/images/afterdark.png') center/cover;
+  background: url('/images/afterdark_img.webp') center/cover;
   background-attachment: fixed;
   position: relative;
 }
