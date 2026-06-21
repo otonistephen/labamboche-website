@@ -58,34 +58,34 @@ export default function Bakery() {
 
   return (
     <section ref={sectionRef} className='bakery-section'>
-      <div className='container'>
     
-          <div className='bakery-container'>
-            <div className='bakery-content'>
-              <p>B2B partnership</p>
-              <h2 className='bakery-title'>Wholesale Bakery Delivery</h2>
-              <p>
-                We provide a catalog of wholesale products which include:
-                croissants, macarons, cookies, butter tarts, scones, and
-                quiches. We deliver early in the morning to bakeries and cafés
-                in the area. We offer frozen goods for baking in the store, or
-                we have them ready to serve.
-              </p>
-              <Link href='/contact' className='bakery-btn'>
-                buy wholesale
-              </Link>
-            </div>
-            <div className='bakery-image'>
-              <Image
-                src='/images/delivery.png'
-                alt='delivery'
-                width={400}
-                height={400}
-                className='bakery-img'
-              />
-            </div>
+      
+      <div className='container'>
+        <div className='bakery-container'>
+          <div className='bakery-content'>
+            <p>B2B partnership</p>
+            <h2 className='bakery-title'>Wholesale Bakery Delivery</h2>
+            <p>
+              We provide a catalog of wholesale products which include:
+              croissants, macarons, cookies, butter tarts, scones, and quiches.
+              We deliver early in the morning to bakeries and cafés in the area.
+              We offer frozen goods for baking in the store, or we have them
+              ready to serve.
+            </p>
+            <Link href='/contact' className='bakery-btn'>
+              buy wholesale
+            </Link>
           </div>
-        
+          <div className='bakery-image'>
+            <Image
+              src='/images/delivery.png'
+              alt='delivery'
+              width={400}
+              height={400}
+              className='bakery-img'
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

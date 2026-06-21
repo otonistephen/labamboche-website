@@ -34,6 +34,7 @@ export default function MostPopular() {
                     alt={item.name}
                     width={150}
                     height={150}
+                    objectFit='cover'
                   />
                 </div>
                 <div className='image-popular-content'>

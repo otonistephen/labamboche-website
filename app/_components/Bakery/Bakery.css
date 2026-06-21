@@ -1,9 +1,11 @@
 .bakery-section {
-  background: url('/images/bakery_bread.jpg') center/cover;
+  background: url('/images/bakerybread_img.webp') center/cover;
   background-attachment: fixed;
   padding: 5rem 0;
   position: relative;
+  overflow: hidden;
 }
+
 .bakery-content {
   position: relative;
   z-index: 2;
@@ -43,14 +45,13 @@
 
 .bakery-content h2,
 .bakery-content p {
-
   color: var(--color-on-surface-variant);
 }
 .bakery-content h2 {
   font-family: var(--font-noto-regular);
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
-  transition: .5s ease-in-out all;
+  transition: 0.5s ease-in-out all;
 }
 .bakery-content p:first-child {
   font-size: 1.4rem;
@@ -58,7 +59,7 @@
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 1.2px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .bakery-content p:nth-child(3) {
   font-family: var(--font-vietnam-regular);
@@ -82,17 +83,15 @@
   transition: all 0.5s ease;
   width: 100%;
   border-radius: 4px;
-  transition: transform .5s ease-in-out ;
+  transition: transform 0.5s ease-in-out;
 }
 .bakery-content a:hover {
-
   box-shadow: 0 4px 5px #d5dfdf;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 .bakery-image img {
   width: 100%;
   height: auto;
-  
 }
 @media (min-width: 768px) {
   .bakery-container {
@@ -112,7 +111,6 @@
   }
   .bakery-content a {
     margin: unset;
-     max-width: 25rem;
-
+    max-width: 25rem;
   }
 }
