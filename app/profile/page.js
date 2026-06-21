@@ -1,5 +1,3 @@
-'use client';
-import { useState } from 'react';
 import './profile.css';
 import Image from 'next/image';
 import { images } from '../_data/data';
@@ -41,12 +39,26 @@ export default function ProfilePage() {
               <div className='social-login'>
                 <div className='google'>
                   <button>
-                    <i className='bx bxl-google'></i>continue with google
+                    {/* <i className='bx bxl-google'></i>continue with google */}
+                    <Image
+                      src='/images/google.svg'
+                      alt='google image'
+                      width={20}
+                      height={20}
+                    />
+                    continue with google
                   </button>
                 </div>
                 <div className='facebook'>
                   <button>
-                    <i className='bx bxl-facebook'></i>continue with facebook
+                    {/* <i className='bx bxl-facebook'></i>continue with facebook */}
+                    <Image
+                      src='/images/facebook.svg'
+                      alt='facebook image'
+                      width={25}
+                      height={25}
+                    />
+                    continue with facebook
                   </button>
                 </div>
               </div>
@@ -103,7 +115,7 @@ export default function ProfilePage() {
                   </form>
 
                   <p className='login-link'>
-                    Already a member? <a href='#'>Sign In</a>
+                    Already a member? <Link href='#'>Sign In</Link>
                   </p>
                 </div>
               </div>

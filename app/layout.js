@@ -2,7 +2,7 @@ import Footer from './_components/Footer/Footer';
 import Header from './_components/Header';
 import './_styles/globals.css';
 import localFont from 'next/font/local';
-// import 'boxicons/css/boxicons.min.css';
+
 
 export const metadata = {
   title: 'La Bamboche',
@@ -61,33 +61,7 @@ const vietnamProLight = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <head>
-        {/* 1. Preload the font stylesheet file data in the background */}
-        <link
-          rel='preload'
-          href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-          as='style'
-        />
-
-        {/* 2. Set it to print mode initially so the browser doesn't block layout rendering */}
-        <link
-          id='boxicons-stylesheet'
-          rel='stylesheet'
-          href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
-          media='print'
-        />
-
-        {/* 3. Drop a tiny script to swap media to 'all' once the layout mounts */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-        document.getElementById('boxicons-stylesheet').addEventListener('load', function() {
-          this.media = 'all';
-        });
-      `,
-          }}
-        />
-      </head>
+   
       <body
         suppressHydrationWarning={true}
         className={`${notoRegular.variable} ${notoBold.variable} ${liberationRegular.variable} ${liberationBold.variable}${vietnamProSemiBold.variable}
