@@ -4,9 +4,9 @@
   z-index: 2;
   padding: 2.5rem 0;
   margin: 0 auto;
-  opacity: 0;
-  animation: zoomIn 1s ease forwards;
-  animation-delay: 0.2s;
+  /* opacity: 0;
+  animation: zoomIn .2s ease forwards;
+  animation-delay: 0.2s; */
 }
 
 .hero-content {
@@ -66,8 +66,6 @@
   align-items: center;
   justify-content: center;
 
-  
-  
   color: var(--color-on-secondary-container);
   color: var(--color-on-surface);
   font-family: var(--font-vietnam-Light);
@@ -81,15 +79,13 @@
 
   transition: all 0.5s ease;
   text-transform: uppercase;
-background-color: var(--color-rose-300);
+  background-color: var(--color-rose-300);
   opacity: 0;
   animation: zoomIn 1s ease forwards;
   animation-delay: 0.7s;
-  
 }
 
 .hero-content a:hover {
-
   background-color: var(--color-primary-fixed-dim);
   transform: scale(1.1);
 }
@@ -117,8 +113,8 @@ background-color: var(--color-rose-300);
   }
   .hero-content h1 {
     line-height: 1.1;
-    letter-spacing: 0.03em; 
-    font-size: 6rem; 
+    letter-spacing: 0.03em;
+    font-size: 6rem;
   }
   .hero-text-description {
     padding-top: 1.5rem;

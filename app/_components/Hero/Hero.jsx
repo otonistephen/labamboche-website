@@ -1,4 +1,3 @@
-
 import HeroText from '../HeroText/HeroText';
 import './Hero.css';
 import Image from 'next/image';
