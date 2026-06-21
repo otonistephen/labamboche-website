@@ -13,6 +13,7 @@ export default function Hero() {
           fill
           sizes='100vw'
           priority
+          fetchPriority='high'
           style={{ objectFit: 'cover' }}
           className='hero-image'
         />
