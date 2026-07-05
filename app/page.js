@@ -16,7 +16,6 @@ export default function Home() {
         <OurMenu/>
         <Bakery/>
         <MostPopular/>
-       
         <OurRestaurant/>
         <AfterDark/>
         <Blog/>

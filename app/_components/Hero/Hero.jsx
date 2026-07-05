@@ -7,7 +7,7 @@ export default function Hero() {
     <section className='hero'>
       <div className='image-wrapper'>
         <Image
-          src={images.bakery_3}
+          src={images.bakery_bg}
           alt='Hero Image'
           fill
           sizes='100vw'

@@ -87,6 +87,7 @@ export const images = {
   pasta_img: '/image/pasta_img.webp',
   cupcakes_img: '/image/cupcakes_img.webp',
   sandwish_img: '/image/sandwish_img.webp',
+  bakery_bg:'/images/bakery_bg.webp',
 
   cakes: '/new-images/cakes.svg',
   cookies: '/new-images/cookies.svg',

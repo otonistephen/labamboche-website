@@ -11,7 +11,6 @@
 
 .hero-content {
   padding-bottom: 1.5rem;
-
   padding-top: 8rem;
 }
 
@@ -42,8 +41,8 @@
   margin-bottom: 1.2rem;
   text-transform: uppercase;
   opacity: 0;
-  animation: slideLeft 3s ease forwards;
-  animation-delay: 1.5s;
+  animation: slideLeft 1s ease forwards;
+  /* animation-delay: 1.5s; */
 }
 
 .hero-text-description p {
@@ -103,12 +102,9 @@
     margin: 0;
     padding-right: 2rem;
   }
-  .hero-content {
-    padding-top: 0;
-  }
+ 
   .hero-content .hero-p {
     line-height: 1.6;
-
     margin-bottom: 1.51rem;
   }
   .hero-content h1 {
@@ -120,5 +116,10 @@
     padding-top: 1.5rem;
     padding-right: 1.481rem;
     padding-bottom: 1.4rem;
+  }
+}
+@media(min-width:1024px){
+ .hero-content {
+    padding-top: 0;
   }
 }

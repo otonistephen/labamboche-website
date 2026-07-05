@@ -45,8 +45,6 @@ export default function NavLinks({ click, closeMobileMenu }) {
           Sign Up
         </Link>
       </li> */}
-
-      
     </ul>
   );
 }

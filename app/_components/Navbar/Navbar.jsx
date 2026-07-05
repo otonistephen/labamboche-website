@@ -13,7 +13,7 @@ export default function Navbar() {
 
   const handleClick = () => setClick(!click);
   // const closeMobileMenu = () => setClick(false);
-    const closeMobileMenu = () => {
+  const closeMobileMenu = () => {
     if (window.innerWidth <= 768) {
       setTimeout(() => setClick(false), 700);
     } else {
@@ -31,22 +31,20 @@ export default function Navbar() {
   return (
     <nav className={`${scrolled ? 'scrolled' : ''} ${click ? 'active' : ''}`}>
       <div className='container'>
-        <div className={`navbar ${click ? 'active' : ''}`}>
+        <div className='navbar'>
           <Logo closeMobileMenu={closeMobileMenu} />
           <div className='div-flex cart-hamburger'>
             <NavLinks click={click} closeMobileMenu={closeMobileMenu} />
-
-           
           </div>
           <CartProfile click={click} closeMobileMenu={closeMobileMenu} />
-           <div
-              className={` hamburger ${click ? 'active' : ''}`}
-              onClick={handleClick}
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+          <div
+            className={` hamburger ${click ? 'active' : ''}`}
+            onClick={handleClick}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </nav>
